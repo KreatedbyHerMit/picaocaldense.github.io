@@ -1,0 +1,6 @@
+<footer id="footer" class="site-footer">
+  <div class="copyright">
+    <p>&copy; {{ "now" | date: "%Y" }} Picao Caldense. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/mmistakes/so-simple-theme" rel="nofollow">So Simple</a>.</p>
+    <p>Custom footer content goes here!</p>
+  </div>
+</footer>

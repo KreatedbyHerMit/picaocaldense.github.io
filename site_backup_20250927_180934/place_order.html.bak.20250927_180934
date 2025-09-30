@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Place Order - Picao Caldense</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f8f8f8; }
+        h1 { color: #333; }
+        .product { border: 1px solid #ccc; padding: 10px; margin: 10px 0; display: flex; align-items: center; background: #fff; }
+        .product img { width: 100px; height: 100px; object-fit: cover; margin-right: 20px; }
+        .product-details { flex: 1; }
+        .product input { width: 50px; }
+        .order-form { margin-top: 20px; }
+        button { padding: 10px 20px; background: #28a745; color: #fff; border: none; cursor: pointer; }
+        button:hover { background: #218838; }
+        .message { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Place Your Order</h1>
+
+    <form id="orderForm" class="order-form">
+        <label>
+            Name: <input type="text" id="name" required>
+        </label><br><br>
+        <label>
+            Contact: <input type="text" id="contact" required>
+        </label>
+
+        <h2>Products</h2>
+        <div id="products">
+            {% for product in products %}
+            <div class="product">
+                <img src="{{ product.image_url or '/static/default.png' }}" alt="{{ product.name }}">
+                <div class="product-details">
+                    <strong>{{ product.name }}</strong><br>
+                    Price: ${{ product.price }}<br>
+                    Quantity: <input type="number" min="0" value="0" data-id="{{ product.id }}">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <button type="submit">Place Order</button>
+    </form>
+
+    <div class="message" id="message"></div>
+
+    <script>
+        const form = document.getElementById('orderForm');
+        const message = document.getElementById('message');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const contact = document.getElementById('contact').value;
+
+            const items = [];
+            document.querySelectorAll('#products input[type="number"]').forEach(input => {
+                const quantity = parseInt(input.value);
+                if (quantity > 0) {
+                    items.push({ id: parseInt(input.dataset.id), quantity });
+                }
+            });
+
+            if (items.length === 0) {
+                message.textContent = "Please select at least one product.";
+                message.style.color = "red";
+                return;
+            }
+
+            const response = await fetch('/place_order', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, contact, items })
+            });
+
+            const data = await response.json();
+            if (data.status === 'success') {
+                message.textContent = `Order placed successfully! Order ID: ${data.order_id}`;
+                message.style.color = 'green';
+                form.reset();
+            } else {
+                message.textContent = data.message;
+                message.style.color = 'red';
+            }
+        });
+    </script>
+</body>
+</html>
