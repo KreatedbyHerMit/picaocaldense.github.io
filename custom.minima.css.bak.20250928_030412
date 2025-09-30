@@ -1,0 +1,74 @@
+/* Custom Minima-style overrides to match screenshot */
+:root {
+  --site-max-width: 920px;
+}
+
+/* Center brand and right-align nav (like screenshot) */
+.site-header {
+  padding: 24px 28px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+.site-title {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* nav to the right */
+.main-navigation {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.main-navigation a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+}
+
+/* Main content width and big H1 */
+.site-main {
+  max-width: var(--site-max-width);
+  margin: 56px auto;
+  padding: 0 20px;
+}
+h1.page-title, h1 {
+  font-size: 56px;
+  line-height: 1;
+  margin: 0 0 28px 0;
+  font-weight: 500;
+}
+
+/* paragraphs a bit larger and airy */
+.entry-content p {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 28px;
+}
+
+/* Footer spacing */
+.site-footer {
+  border-top: 1px solid #eee;
+  padding: 30px 20px;
+  margin-top: 60px;
+  color: #666;
+  font-size: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 720px){
+  h1.page-title { font-size: 36px; }
+  .main-navigation { gap: 12px; }
+  .site-title { font-size: 20px; }
+  .entry-content p { font-size: 18px; }
+}

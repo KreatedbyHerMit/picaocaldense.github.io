@@ -1,0 +1,13 @@
+<p>para</p>
+
+<figure class="class" id="id">
+  
+  <figcaption>standalone image</figcaption>
+</figure>
+
+<figure id="block-id" class="block-class" block-key="block-value">
+  
+  <figcaption>standalone image</figcaption>
+</figure>
+
+<p>para</p>
