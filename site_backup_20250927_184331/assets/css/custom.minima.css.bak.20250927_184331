@@ -1,4 +1,0 @@
-/* Custom Minima CSS */
-.site-main { max-width: 920px; margin: 50px auto; padding: 0 20px; }
-h1 { font-size: 56px; margin-bottom: 28px; }
-.entry-content p { font-size: 20px; line-height: 1.7; }
