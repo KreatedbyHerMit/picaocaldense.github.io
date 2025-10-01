@@ -1,0 +1,5 @@
+title: "Picao Caldense"
+description: "Official website for Picao Caldense"
+baseurl: ""
+url: "http://localhost:4000"
+theme: minima
