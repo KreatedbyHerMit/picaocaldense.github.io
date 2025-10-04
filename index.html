@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Picao Caldense - Home</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #222; }
+    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; background: #f9f9f9; color: #222; }
     header { background: #000; color: #fff; padding: 20px; text-align: center; font-size: 22px; letter-spacing: 1px; }
-    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    main { max-width: 900px; margin: 40px auto; padding: 0 20px; font-size: 20px; line-height: 1.7; }
-    footer { text-align: center; padding: 20px; background: #f5f5f5; font-size: 14px; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; transition: color 0.3s; }
+    nav a:hover { color: #ffd700; }
+    main { max-width: 900px; margin: 60px auto; padding: 0 20px; }
+    .card { background: #fff; padding: 30px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 40px; transition: transform 0.3s; }
+    .card:hover { transform: translateY(-5px); }
+    .card h1 { font-size: 34px; margin-bottom: 20px; color: #000; }
+    .card p { font-size: 20px; line-height: 1.8; color: #555; }
+    footer { text-align: center; padding: 20px; background: #111; color: #ccc; font-size: 14px; margin-top: 60px; }
   </style>
 </head>
 <body>
   <header>
-    <div>Picao Caldense</div>
+    Picao Caldense
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -24,12 +28,14 @@
   </header>
 
   <main>
-    <h1>Authentic Colombian Salsa</h1>
-    <p>
-      Picao Caldense is a family-owned brand making authentic Colombian salsa piqué in Laval, Quebec. 
-      Every bottle is crafted with fresh ingredients, love, and care — bringing the true flavors of Colombia to your table. 
-      Our salsa is perfect on empanadas, rice, or just about any dish that needs a touch of warmth and spice.
-    </p>
+    <div class="card">
+      <h1>Authentic Colombian Salsa</h1>
+      <p>
+        Picao Caldense is a family-owned brand making authentic Colombian salsa piqué in Laval, Quebec. 
+        Every bottle is crafted with fresh ingredients, love, and care — bringing the true flavors of Colombia to your table. 
+        Perfect on empanadas, rice, or any dish that needs a touch of warmth and spice.
+      </p>
+    </div>
   </main>
 
   <footer>
