@@ -4,3 +4,5 @@ theme: minima
 author: Jessica Betancur
 url: "https://picaocaldense.com"
 baseurl: ""
+plugins:
+  - jekyll-feed
