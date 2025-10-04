@@ -5,17 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Picao Caldense</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #222; }
-    header { background: #000; color: #fff; padding: 20px; text-align: center; font-size: 22px; letter-spacing: 1px; }
-    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    main { max-width: 900px; margin: 40px auto; padding: 0 20px; font-size: 20px; line-height: 1.7; }
-    footer { text-align: center; padding: 20px; background: #f5f5f5; font-size: 14px; }
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #fafafa;
+      color: #222;
+    }
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.8;
+      font-size: 20px;
+    }
+    .intro {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 50px;
+      transition: transform 0.3s ease;
+    }
+    .intro:hover {
+      transform: translateY(-5px);
+    }
+    .intro h1 {
+      font-size: 34px;
+      margin-bottom: 15px;
+      color: #000;
+    }
+    .intro p {
+      font-size: 20px;
+      color: #555;
+      margin-bottom: 0;
+    }
+    section {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    section h2 {
+      color: #000;
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+    section p {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <div>Picao Caldense</div>
+    Picao Caldense
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -24,16 +99,27 @@
   </header>
 
   <main>
-    <h1>About</h1>
-    <p>
-      I’m <strong>Jessica Betancur</strong>, the proud founder of Picao Caldense — where every <strong>bottle</strong> of salsa piqué tells a story. 
-      Born into a Colombian family with deep culinary roots, I grew up surrounded by the bold flavors, colors, and aromas of our culture. 
-      What began as a family recipe has become a symbol of connection, love, and heritage — now bottled for you to enjoy.
-    </p>
-    <p>
-      Each bottle of <strong>Picao Caldense Salsa Piqué</strong> is handcrafted in <strong>Laval, Quebec</strong>, using fresh, local ingredients and traditional Colombian methods. 
-      From the tang of lime to the warmth of fresh peppers, every drop brings the spirit of Colombia right to your table.
-    </p>
+    <div class="intro">
+      <h1>About</h1>
+      <p>Where every bottle tells a story of family, flavor, and Colombian pride — crafted with love in Laval, Quebec.</p>
+    </div>
+
+    <section>
+      <h2>Our Story</h2>
+      <p>
+        I’m <strong>Jessica Betancur</strong>, the proud founder of Picao Caldense. Growing up in a Colombian family with deep culinary roots,
+        I was surrounded by the vibrant colors and flavors that defined our traditions. 
+        What began as a simple family recipe for salsa piqué evolved into a passionate mission — to share a taste of Colombia with every table across Canada.
+      </p>
+      <p>
+        Each <strong>bottle</strong> of Picao Caldense Salsa Piqué is made by hand with fresh, local ingredients and authentic Colombian methods. 
+        From the bright zest of lime to the warmth of fresh peppers, every drop brings the heart of our culture to your kitchen.
+      </p>
+      <p>
+        This isn’t just a salsa — it’s a legacy. A connection between generations, cultures, and communities. 
+        Welcome to the flavor, warmth, and heart of Colombia — welcome to Picao Caldense.
+      </p>
+    </section>
   </main>
 
   <footer>
