@@ -3,6 +3,8 @@ layout: default
 title: About
 ---
 
+![Family Tradition](assets/images/banner.jpg)
+
 # Our Story
 Growing up as a first-generation Canadian, my life has been a beautiful blend of two worlds.
 
