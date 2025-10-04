@@ -3,8 +3,6 @@ layout: default
 title: Home
 ---
 
-![Picao Caldense Salsa](assets/salsa-banner.jpg)
-
 # Welcome to Picao Caldense!
 
 Authentic homemade Colombian salsa piqué - Crafted with Family, Flavor, and Heart in Laval, Quebec.
