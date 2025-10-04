@@ -1,14 +1,8 @@
 ---
-layout: default
 title: Home
+layout: default
 ---
 
-![Banner](assets/images/banner.jpg)
+Welcome to Picao Caldense! I’m Jessica Betancur, the proud President of Picao Caldense. Born into a family with a deep Colombian heritage, I carry forward our tradition of crafting authentic homemade salsa piqué. Passion and family are at the heart of everything we make.
 
-# Welcome to Picao Caldense!
-
-Authentic homemade Colombian salsa piqué - Crafted with Family, Flavor, and Heart in Laval, Quebec.
-
-This vibrant Colombian salsa piqué is more than just a sauce — it’s a cherished family tradition passed down through generations and lovingly made right here in Laval. Bursting with fresh, bold flavors of tangy lime, fragrant cilantro, and just the right kick of spice, it brings warmth and spirit to your bottle.
-
-© 2025 Picao Caldense. All rights reserved.
+Our salsa is crafted in Montreal with fresh ingredients, love, and care. Every bottle tells a story — one of culture, warmth, and flavor.
