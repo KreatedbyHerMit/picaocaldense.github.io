@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picao Caldense - Order</title>
+</head>
+<body>
+    <h1>Place Your Order</h1>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="product">Product:</label><br>
+        <select id="product" name="product">
+            <option value="classic">Classic Salsa Piqué</option>
+            <option value="spicy">Extra Spicy Salsa</option>
+            <option value="mild">Mild Salsa</option>
+        </select><br><br>
+        
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" value="1"><br><br>
+        
+        <input type="submit" value="Submit Order">
+    </form>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="order.html">Order</a>
+    </nav>
+</body>
+</html>
