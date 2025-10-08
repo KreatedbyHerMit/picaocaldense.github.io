@@ -1,3 +1,4 @@
+cat > _config.yml <<'EOF'
 title: "Picao Caldense"
 description: "Authentic Colombian homemade salsa piqué — crafted with love in Montreal."
 author: "Jessica Betancur"
@@ -5,23 +6,19 @@ email: "info@picaocaldense.ca"
 url: "https://kreatedbyhermit.github.io"
 baseurl: "/picaocaldense"
 
-# Theme and build settings
 theme: minima
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
 
-# Social links (optional)
 social_links:
   instagram: "https://instagram.com/picaocaldense"
   facebook: "https://facebook.com/picaocaldense"
 
-# Plugins (helps with GitHub Pages compatibility)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Exclude backup folders from build
 exclude:
   - backup_*
   - safe_backup*
@@ -31,3 +28,4 @@ exclude:
   - node_modules
   - Gemfile*
   - restore_*.sh
+EOF
