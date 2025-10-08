@@ -4,22 +4,36 @@ title: "Home"
 ---
 
 <style>
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* General layout */
+body { margin: 0; font-family: Arial, sans-serif; }
+
+/* Header */
 .header-banner {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 20px;
   font-family: 'Playfair Display', serif;
-  font-size: 4em;
+  font-size: 3em;
 }
+
+/* Icon section */
 .icons {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 60px 0;
+  gap: 30px;
 }
 .icons img {
   width: 100px;
-  margin: 0 30px;
+  height: 100px;
 }
+
+/* Description */
 .description {
   background-color: white;
   color: black;
@@ -29,6 +43,8 @@ title: "Home"
   max-width: 800px;
   margin: 0 auto;
 }
+
+/* Footer */
 footer {
   background-color: black;
   color: white;
@@ -36,10 +52,19 @@ footer {
   padding: 20px;
   font-size: 0.8em;
 }
+
+/* End banner */
 .end-banner {
   background-color: #111;
   height: 50px;
   margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header-banner { font-size: 2em; padding: 60px 10px; }
+  .icons img { width: 70px; height: 70px; }
+  .description { padding: 40px 10px; font-size: 1em; }
 }
 </style>
 
@@ -48,9 +73,9 @@ footer {
 </header>
 
 <section class="icons">
-  <img src="/assets/icon1.png" alt="Icon 1">
-  <img src="/assets/icon2.png" alt="Icon 2">
-  <img src="/assets/icon3.png" alt="Icon 3">
+  <img src="/assets/icon1.svg" alt="Icon 1">
+  <img src="/assets/icon2.svg" alt="Icon 2">
+  <img src="/assets/icon3.svg" alt="Icon 3">
 </section>
 
 <section class="description">
