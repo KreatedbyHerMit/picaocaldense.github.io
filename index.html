@@ -1,27 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Picao Caldense</title>
-  <link rel="stylesheet" href="assets/main.css">
-</head>
-<body>
-  <header>
-    <h1>Picao Caldense</h1>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="order.html">Order</a>
-    </nav>
-  </header>
-  <main>
-    <p>Welcome to Picao Caldense! Discover the authentic taste of Colombian homemade salsa piqué.</p>
-  </main>
-  <footer>
-    <p>© 2025 Picao Caldense. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+---
+layout: default
+title: "Home"
+---
 
+<style>
+.header-banner {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 4em;
+}
+.icons {
+  text-align: center;
+  margin: 60px 0;
+}
+.icons img {
+  width: 100px;
+  margin: 0 30px;
+}
+.description {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8em;
+}
+.end-banner {
+  background-color: #111;
+  height: 50px;
+  margin-top: 40px;
+}
+</style>
 
+<header class="header-banner">
+  Picao Caldense
+</header>
+
+<section class="icons">
+  <img src="/assets/icon1.png" alt="Icon 1">
+  <img src="/assets/icon2.png" alt="Icon 2">
+  <img src="/assets/icon3.png" alt="Icon 3">
+</section>
+
+<section class="description">
+  <p>Authentic Colombian homemade salsa piqué — crafted in Montreal with love. Every bottle tells a story of culture, warmth, and flavor.</p>
+</section>
+
+<footer>
+  &copy; 2025 Picao Caldense. All rights reserved.
+</footer>
+
+<div class="end-banner"></div>
