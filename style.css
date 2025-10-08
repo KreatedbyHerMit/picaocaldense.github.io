@@ -1,0 +1,131 @@
+/* Reset & base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333;
+}
+
+/* Header Banner */
+.header-banner {
+    background-color: #000;
+    padding: 1rem 0;
+    color: #fff;
+}
+.header-banner .logo {
+    height: 80px;
+}
+.header-title {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 0.5rem;
+}
+
+/* Navigation Links */
+.nav-center, .nav-center-about, .nav-center-order {
+    padding: 0.5rem 0;
+}
+
+.nav-center a, .nav-center-about a, .nav-center-order a {
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-center a { color: #fff; }
+.nav-center a:hover { color: #e67e22; }
+
+.nav-center-about a, .nav-center-order a { color: #000; }
+.nav-center-about a:hover, .nav-center-order a:hover { color: #e67e22; }
+
+/* Home Page */
+.home-title {
+    font-size: 4rem;
+    margin: 3rem 0 1rem 0;
+    color: #fff;
+    font-weight: bold;
+}
+.home-description {
+    font-size: 1.5rem;
+    margin: 1rem auto 2rem auto;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #fff;
+}
+.btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* About Page */
+.about-description {
+    font-size: 1.5rem;
+    margin: 3rem auto 1.5rem auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+.instagram-handle {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+.instagram-handle a {
+    color: #e67e22;
+    text-decoration: none;
+}
+.instagram-handle a:hover {
+    text-decoration: underline;
+}
+
+/* Order Page */
+.order-title {
+    font-size: 3rem;
+    margin: 3rem 0 1rem 0;
+}
+.order-description {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+.flavors-list {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.flavors-list li {
+    margin-bottom: 0.75rem;
+}
+.order-contact {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+.order-contact a {
+    color: #e67e22;
+    text-decoration: none;
+}
+.order-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
