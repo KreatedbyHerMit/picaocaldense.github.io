@@ -1,0 +1,7 @@
+# Ignore all backup and temporary folders
+backup*/
+trash_backup/
+broken_backup*/
+safe_backup*/
+*_bak/
+*.bak

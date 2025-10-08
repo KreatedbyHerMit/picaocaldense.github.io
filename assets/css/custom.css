@@ -1,0 +1,15 @@
+header.site-header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+#insta-handle {
+    text-align: center;
+    font-style: italic;
+    margin-top: 1rem;
+}
