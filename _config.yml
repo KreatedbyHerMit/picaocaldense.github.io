@@ -1,31 +1,5 @@
-cat > _config.yml <<'EOF'
-title: "Picao Caldense"
-description: "Authentic Colombian homemade salsa piqué — crafted with love in Montreal."
-author: "Jessica Betancur"
-email: "info@picaocaldense.ca"
-url: "https://kreatedbyhermit.github.io"
-baseurl: "/picaocaldense"
-
+title: Picao Caldense
+description: "Authentic Colombian homemade salsa piqué — crafted in Montreal with love."
 theme: minima
-markdown: kramdown
-highlighter: rouge
-permalink: pretty
-
-social_links:
-  instagram: "https://instagram.com/picaocaldense"
-  facebook: "https://facebook.com/picaocaldense"
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
-exclude:
-  - backup_*
-  - safe_backup*
-  - trash_backup*
-  - recovered
-  - emergency_backup
-  - node_modules
-  - Gemfile*
-  - restore_*.sh
-EOF
+baseurl: ""
+url: "https://KreatedbyHerMit.github.io"
