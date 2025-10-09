@@ -1,36 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Picao Caldense - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picao Caldense</title>
+  <style>
+    /* Reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif; /* Elegant serif font */
+    }
+
+    /* Banner/Header */
+    .banner {
+      background-image: url('banner.jpg'); /* Replace with your banner image */
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 0 20px; /* Ensures text doesn't touch edges */
+    }
+
+    .banner h1 {
+      font-size: 4rem;
+      margin: 0.5rem;
+    }
+
+    .banner .emoji {
+      font-size: 2.5rem;
+      margin: 1rem 0;
+    }
+
+    .banner p {
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: 1rem auto;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Order Button */
+    .order-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 1rem 2rem;
+      background-color: #d62828;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .order-btn:hover {
+      background-color: #b71c1c;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin: 2rem 0;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+  </style>
 </head>
 <body>
-    <header>
-        <div class="header-banner"></div>
-        <nav class="nav-center">
-            <a href="index.html" style="color: orange;">Home</a>
-            <a href="about.html" style="color: orange;">About</a>
-            <a href="order.html" style="color: orange;">Order</a>
-        </nav>
-    </header>
 
-    <main>
-        <h1>Picao Caldense</h1>
-        <div class="icons">🔥 🌶️ ❤️</div>
-        <p>
-            Experience the vibrant flavors of Colombian cuisine, crafted in Laval using traditional techniques 
-            that bring family and friends together. Every meal is a celebration of culture, love, 
-            and unforgettable memories.
-        </p>
-        <a href="order.html" class="btn">Place an Order</a>
-    </main>
+  <header class="banner">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Order</a>
+    </nav>
+    <h1>Picao Caldense</h1>
+    <div class="emoji">🔥 🌶️ ❤️</div>
+    <p>
+      Discover the rich and authentic flavors of Colombian cuisine, crafted with care and passion. Each sauce, spice, and ingredient is selected to honor traditional recipes while bringing a unique, modern touch to every dish. From the first bite, you’ll be transported to lively kitchens filled with warmth, laughter, and the aromas of home-cooked meals. Whether shared with family or enjoyed among friends, every creation tells a story of culture, community, and the joy of savoring food made with love. Experience a culinary journey that celebrates heritage, creativity, and the unforgettable tastes that linger long after the meal is finished.
+    </p>
+    <a href="#" class="order-btn">Place an Order</a>
+  </header>
 
-    <footer>
-        © 2025 Picao Caldense — All rights reserved.
-    </footer>
+  <footer>
+    © 2025 Picao Caldense — All rights reserved.
+  </footer>
+
 </body>
 </html>
 
